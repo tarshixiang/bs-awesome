@@ -51,11 +51,13 @@
 		表单
 			.form-group 组
 			.form-control 定义input 
-			.form-inline 
-			.checkbox .radio
+			.form-inline .form-horizontal 
+			.checkbox .radio -> .radio-inline .checkbox-inline
 			.input-group -> .input-group-addon 
-			.form-horizontal
 
+			label -> .control-label 文字对齐
+			.form-control-static 文本对齐	
+			readonly disable 
 	 -->
 	<style>
 		.big{
@@ -72,9 +74,19 @@
 	<!-- <i class="icon-camera-retro big"></i> -->
 	<div class="container" style="margin-top: 20px">
 	<!-- <iframe src="side.html" frameborder="0"></iframe> -->
-		<form action="" class="form-horizontal">
-			
+		<form >
+	    	<div class="form-group">
+	    		<label for="username" class="control-label">username</label>
+	    		<input type="text" id="username" class="form-control col-sm-10" value="plase input username">
+	    	</div>
+	    	<div class="form-group">
+	    		<label for="password" class="control-label">password</label>
+	    		<input type="password" id="pasword" class="form-control" class="plase input pass">
+	    	</div>
+	    	<button class="btn btn-primary btn-block">submit</button>
 		</form>
+
+
 	</div>
 	
 </body>
