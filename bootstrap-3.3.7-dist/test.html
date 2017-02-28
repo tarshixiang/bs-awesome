@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/font.css">
+
+	<style>
+		.navbar-static-side{
+		    z-index: 2001;
+		    position: absolute;
+		    width: 280px;
+		    height: 100%;
+		    background: #ccc;
+		}
+		body,html{
+			height: 100%;
+		}
+
+		.metismenu .arrow {
+		    float: right;
+		    line-height: 1.42857;
+		}.arrow {
+		    float: right;
+		}
+        .fa {
+		    display: inline-block;
+		    font: normal normal normal 14px/1 FontAwesome;
+		    font-size: inherit;
+		    text-rendering: auto;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		}
+		.fa.arrow:before {
+		    content: "\f104";
+		}
+		.metismenu .fa.arrow:before {
+		    content: "\f104";
+		}
+		.navbar-default {
+		    background-color: transparent;
+		    border-color: #2f4050;
+		}
+		#page-wrapper{
+			margin-left: 280px;
+			padding: 0 15px;
+			height: 100%;
+		    position: relative !important;
+		}
+		.gray-bg, .bg-muted {
+		    background-color: #f3f3f4;
+		}
+	
+	</style>
+</head>
+<body>
+
+	<div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element"> <span>
+                            <img alt="图片" class="img-circle" src="img/profile_small.jpg">
+                             </span>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold"><font><font>大卫·威廉姆斯</font></font></strong>
+                             </span> <span class="text-muted text-xs block"><font><font>艺术总监</font></font><b class="caret"></b></span> </span> </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a href="profile.html"><font><font>简介</font></font></a></li>
+                            <li><a href="contacts.html"><font><font>联系人</font></font></a></li>
+                            <li><a href="mailbox.html"><font><font>邮箱</font></font></a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html"><font><font>登出</font></font></a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element"><font><font>
+                        IN +
+                    </font></font></div>
+                </li>
+                <li>
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label"><font><font>仪表板</font></font></span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="index.html"><font><font>仪表板v.1</font></font></a></li>
+                        <li><a href="dashboard_2.html"><font><font>仪表板v.2</font></font></a></li>
+                        <li><a href="dashboard_3.html"><font><font>仪表板v.3</font></font></a></li>
+                        <li><a href="dashboard_4_1.html"><font><font>仪表板v.4</font></font></a></li>
+                        <li><a href="dashboard_5.html"><font><font>仪表板v.5 </font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label"><font><font>布局</font></font></span></a>
+                </li>
+                <li >
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label"><font><font>图表</font></font></span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse" style="height: 0px;">
+                        <li><a href="graph_flot.html"><font><font>油位图</font></font></a></li>
+                        <li><a href="graph_morris.html"><font><font>Morris.js图表</font></font></a></li>
+                        <li><a href="graph_rickshaw.html"><font><font>人力车图</font></font></a></li>
+                        <li><a href="graph_chartjs.html"><font><font>Chart.js</font></font></a></li>
+                        <li><a href="graph_chartist.html"><font><font>Chartist</font></font></a></li>
+                        <li><a href="c3.html"><font><font>c3图表</font></font></a></li>
+                        <li><a href="graph_peity.html"><font><font>心理图</font></font></a></li>
+                        <li><a href="graph_sparkline.html"><font><font>迷你图</font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label"><font><font>邮箱</font></font></span><span class="label label-warning pull-right"><font><font>16/24</font></font></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="mailbox.html"><font><font>收件箱</font></font></a></li>
+                        <li><a href="mail_detail.html"><font><font>电子邮件视图</font></font></a></li>
+                        <li><a href="mail_compose.html"><font><font>写邮件</font></font></a></li>
+                        <li><a href="email_template.html"><font><font>电子邮件模板</font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label"><font><font>指标</font></font></span>  </a>
+                </li>
+                <li>
+                    <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label"><font><font>窗口小部件</font></font></span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label"><font><font>形式</font></font></span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="form_basic.html"><font><font>基本形式</font></font></a></li>
+                        <li><a href="form_advanced.html"><font><font>高级插件</font></font></a></li>
+                        <li><a href="form_wizard.html"><font><font>向导</font></font></a></li>
+                        <li><a href="form_file_upload.html"><font><font>上传文件</font></font></a></li>
+                        <li><a href="form_editors.html"><font><font>文本编辑器</font></font></a></li>
+                        <li><a href="form_autocomplete.html"><font><font>自动完成</font></font></a></li>
+                        <li><a href="form_markdown.html"><font><font>Markdown</font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label"><font><font>应用程序视图</font></font></span>  <span class="pull-right label label-primary"><font><font>SPECIAL</font></font></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="contacts.html"><font><font>联系人</font></font></a></li>
+                        <li><a href="profile.html"><font><font>简介</font></font></a></li>
+                        <li><a href="profile_2.html"><font><font>资料v.2</font></font></a></li>
+                        <li><a href="contacts_2.html"><font><font>联系人v.2</font></font></a></li>
+                        <li><a href="projects.html"><font><font>项目</font></font></a></li>
+                        <li><a href="project_detail.html"><font><font>项目详细信息</font></font></a></li>
+                        <li><a href="activity_stream.html"><font><font>活动流</font></font></a></li>
+                        <li><a href="teams_board.html"><font><font>团队板</font></font></a></li>
+                        <li><a href="social_feed.html"><font><font>社交Feed</font></font></a></li>
+                        <li><a href="clients.html"><font><font>客户</font></font></a></li>
+                        <li><a href="full_height.html"><font><font>Outlook视图</font></font></a></li>
+                        <li><a href="vote_list.html"><font><font>投票列表</font></font></a></li>
+                        <li><a href="file_manager.html"><font><font>文件管理器</font></font></a></li>
+                        <li><a href="calendar.html"><font><font>日历</font></font></a></li>
+                        <li><a href="issue_tracker.html"><font><font>问题跟踪</font></font></a></li>
+                        <li><a href="blog.html"><font><font>博客</font></font></a></li>
+                        <li><a href="article.html"><font><font>文章</font></font></a></li>
+                        <li><a href="faq.html"><font><font>常问问题</font></font></a></li>
+                        <li><a href="timeline.html"><font><font>时间线</font></font></a></li>
+                        <li><a href="pin_board.html"><font><font>针板</font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label"><font><font>其他页</font></font></span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="search_results.html"><font><font>搜索结果</font></font></a></li>
+                        <li><a href="lockscreen.html"><font><font>锁屏</font></font></a></li>
+                        <li><a href="invoice.html"><font><font>发票</font></font></a></li>
+                        <li><a href="login.html"><font><font>登录</font></font></a></li>
+                        <li><a href="login_two_columns.html"><font><font>登录v.2</font></font></a></li>
+                        <li><a href="forgot_password.html"><font><font>忘记密码</font></font></a></li>
+                        <li><a href="register.html"><font><font>寄存器</font></font></a></li>
+                        <li><a href="404.html"><font><font>404页</font></font></a></li>
+                        <li><a href="500.html"><font><font>500页</font></font></a></li>
+                        <li><a href="empty_page.html"><font><font>空页面</font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe"></i> <span class="nav-label"><font><font>杂项</font></font></span><span class="label label-info pull-right"><font><font>新</font></font></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="toastr_notifications.html"><font><font>通知</font></font></a></li>
+                        <li><a href="nestable_list.html"><font><font>可嵌套列表</font></font></a></li>
+                        <li><a href="agile_board.html"><font><font>敏捷板</font></font></a></li>
+                        <li><a href="timeline_2.html"><font><font>时间线v.2</font></font></a></li>
+                        <li><a href="diff.html"><font><font>差异</font></font></a></li>
+                        <li><a href="pdf_viewer.html"><font><font>PDF查看器</font></font></a></li>
+                        <li><a href="i18support.html"><font><font>i18支持</font></font></a></li>
+                        <li><a href="sweetalert.html"><font><font>甜蜜的警报</font></font></a></li>
+                        <li><a href="idle_timer.html"><font><font>空闲定时器</font></font></a></li>
+                        <li><a href="truncate.html"><font><font>截短</font></font></a></li>
+                        <li><a href="password_meter.html"><font><font>密码计</font></font></a></li>
+                        <li><a href="spinners.html"><font><font>纺纱机</font></font></a></li>
+                        <li><a href="spinners_usage.html"><font><font>纺纱机使用</font></font></a></li>
+                        <li><a href="tinycon.html"><font><font>Live favicon</font></font></a></li>
+                        <li><a href="google_maps.html"><font><font>谷歌地图</font></font></a></li>
+                        <li><a href="datamaps.html"><font><font>数据图</font></font></a></li>
+                        <li><a href="social_buttons.html"><font><font>社会按钮</font></font></a></li>
+                        <li><a href="code_editor.html"><font><font>代码编辑器</font></font></a></li>
+                        <li><a href="modal_window.html"><font><font>模态窗口</font></font></a></li>
+                        <li><a href="clipboard.html"><font><font>剪贴板</font></font></a></li>
+                        <li><a href="text_spinners.html"><font><font>文本纺纱器</font></font></a></li>
+                        <li><a href="forum_main.html"><font><font>论坛视图</font></font></a></li>
+                        <li><a href="validation.html"><font><font>验证</font></font></a></li>
+                        <li><a href="tree_view.html"><font><font>树视图</font></font></a></li>
+                        <li><a href="loading_buttons.html"><font><font>加载按钮</font></font></a></li>
+                        <li><a href="chat_view.html"><font><font>聊天视图</font></font></a></li>
+                        <li><a href="masonry.html"><font><font>石工</font></font></a></li>
+                        <li><a href="tour.html"><font><font>游览</font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-flask"></i> <span class="nav-label"><font><font>UI元素</font></font></span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="typography.html"><font><font>排版</font></font></a></li>
+                        <li><a href="icons.html"><font><font>图标</font></font></a></li>
+                        <li><a href="draggable_panels.html"><font><font>可拆卸面板</font></font></a></li> <li><a href="resizeable_panels.html"><font><font>可调整大小的面板</font></font></a></li>
+                        <li><a href="buttons.html"><font><font>纽扣</font></font></a></li>
+                        <li><a href="video.html"><font><font>视频</font></font></a></li>
+                        <li><a href="tabs_panels.html"><font><font>面板</font></font></a></li>
+                        <li><a href="tabs.html"><font><font>标签</font></font></a></li>
+                        <li><a href="notifications.html"><font><font>通知和工具提示</font></font></a></li>
+                        <li><a href="helper_classes.html"><font><font>帮助css类</font></font></a></li>
+                        <li><a href="badges_labels.html"><font><font>徽章，标签，进展</font></font></a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label"><font><font>网格选项</font></font></span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label"><font><font>表</font></font></span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="table_basic.html"><font><font>静态表</font></font></a></li>
+                        <li><a href="table_data_tables.html"><font><font>数据表</font></font></a></li>
+                        <li><a href="table_foo_table.html"><font><font>Foo表</font></font></a></li>
+                        <li><a href="jq_grid.html"><font><font>jqGrid</font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label"><font><font>电子商务</font></font></span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="ecommerce_products_grid.html"><font><font>产品网格</font></font></a></li>
+                        <li><a href="ecommerce_product_list.html"><font><font>产品列表</font></font></a></li>
+                        <li><a href="ecommerce_product.html"><font><font>产品编辑</font></font></a></li>
+                        <li><a href="ecommerce_product_detail.html"><font><font>产品详细信息</font></font></a></li>
+                        <li><a href="ecommerce-cart.html"><font><font>大车</font></font></a></li>
+                        <li><a href="ecommerce-orders.html"><font><font>命令</font></font></a></li>
+                        <li><a href="ecommerce_payments.html"><font><font>信用卡表单</font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label"><font><font>画廊</font></font></span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="basic_gallery.html"><font><font>灯箱库</font></font></a></li>
+                        <li><a href="slick_carousel.html"><font><font>Slick Carousel</font></font></a></li>
+                        <li><a href="carousel.html"><font><font>引导旋转木马</font></font></a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label"><font><font>菜单级别 </font></font></span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a href="#"><font><font>第三级 </font></font><span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level collapse">
+                                <li>
+                                    <a href="#"><font><font>第三级项目</font></font></a>
+                                </li>
+                                <li>
+                                    <a href="#"><font><font>第三级项目</font></font></a>
+                                </li>
+                                <li>
+                                    <a href="#"><font><font>第三级项目</font></font></a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#"><font><font>二级项目</font></font></a></li>
+                        <li>
+                            <a href="#"><font><font>二级项目</font></font></a></li>
+                        <li>
+                            <a href="#"><font><font>二级项目</font></font></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label"><font><font>CSS动画</font></font></span><span class="label label-info pull-right"><font><font>62</font></font></span></a>
+                </li>
+                <li class="landing_link">
+                    <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label"><font><font>着陆页</font></font></span> <span class="label label-warning pull-right"><font><font>新</font></font></span></a>
+                </li>
+                <li class="special_link">
+                    <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label"><font><font>包</font></font></span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg" style="min-height: 768px;">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            <form role="search" class="navbar-form-custom" action="search_results.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                </div>
+            </form>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+                <li>
+                    <span class="m-r-sm text-muted welcome-message"><font><font>欢迎来到INSPINIA +管理主题。</font></font></span>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope"></i>  <span class="label label-warning"><font><font>16</font></font></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="图片" class="img-circle" src="img/a7.jpg">
+                                </a>
+                                <div class="media-body">
+                                    <small class="pull-right"><font></font></small>
+                                    <strong><font><font>46 </font></font></strong><font><small class="pull-right"><font>小时前</font></small><strong><font>Mike Loreipsum</font></strong><font>开始关注</font></font><strong><font><font>Monica Smith</font></font></strong><font><font>。</font></font><br>
+                                    <small class="text-muted"><font><font>3天前在7:58 pm  -  10.06.2014</font></font></small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="图片" class="img-circle" src="img/a4.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right text-navy"><font><font>5小时前</font></font></small>
+                                    <strong><font><font>Chris Johnatan Overtunk</font></font></strong><font><font>开始关注</font></font><strong><font><font>Monica Smith</font></font></strong><font><font>。</font></font><br>
+                                    <small class="text-muted"><font><font>昨天1:21 pm  -  11.06.2014</font></font></small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="dropdown-messages-box">
+                                <a href="profile.html" class="pull-left">
+                                    <img alt="图片" class="img-circle" src="img/profile.jpg">
+                                </a>
+                                <div class="media-body ">
+                                    <small class="pull-right"><font><font>23小时前</font></font></small>
+                                    <strong><font><font>Monica Smith</font></font></strong><font><font> love </font></font><strong><font><font>Kim Smith</font></font></strong><font><font>。</font></font><br>
+                                    <small class="text-muted"><font><font>2天前在2:30 am  -  11.06.2014</font></font></small>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="mailbox.html">
+                                    <i class="fa fa-envelope"></i> <strong><font><font>阅读所有消息</font></font></strong>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary"><font><font>8</font></font></span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i><font><font>您有16条消息
+                                     </font></font><span class="pull-right text-muted small"><font><font>4分钟前</font></font></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="profile.html">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i><font><font>3新关注者
+                                     </font></font><span class="pull-right text-muted small"><font><font>12分钟前</font></font></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="grid_options.html">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i><font><font>服务器</font><span class="pull-right text-muted small"><font>4分钟前</font></span><font>重新启动
+                                    </font></font><span class="pull-right text-muted small"><font></font></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong><font><font>查看所有警报</font></font></strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a href="login.html">
+                        <i class="fa fa-sign-out"></i><font><font> 登出
+                    </font></font></a>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2><font><font>人力车图</font></font></h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html"><font><font>家</font></font></a>
+                        </li>
+                        <li>
+                            <a><font><font>图表</font></font></a>
+                        </li>
+                        <li class="active">
+                            <strong><font><font>人力车图</font></font></strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><font><font>简单区域示例</font></font><small><font><font>使用自定义颜色。</font></font></small></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#"><font><font>配置选项1</font></font></a>
+                                </li>
+                                <li><a href="#"><font><font>配置选项2</font></font></a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div id="chart" class="rickshaw_graph"><svg width="532" height="250"><path class="path" d="M0,47.93897757122653Q115.26666666666667,1.8017107833232728,133,2.4752475247525183C159.6,3.4855526368963865,239.4,48.44413012729848,266,58.04202869266521S372.4,95.42331784198828,399,98.45423317841988Q416.73333333333335,100.47484340270762,532,88.35118205698123L532,250Q416.73333333333335,250,399,250C372.4,250,292.6,250,266,250S159.6,250,133,250Q115.26666666666667,250,0,250Z" fill="#1ab394" stroke="none" stroke-width="2"></path></svg></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5><font><font>多区域</font></font></h5>
+                        <div class="ibox-tools">
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <i class="fa fa-wrench"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#"><font><font>配置选项1</font></font></a>
+                                </li>
+                                <li><a href="#"><font><font>配置选项2</font></font></a>
+                                </li>
+                            </ul>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ibox-content">
+                        <div id="rickshaw_multi" class="rickshaw_graph"><svg width="532" height="250"><g><path d="M0,119.72381448671186Q115.26666666666667,89.97741879451104,133,90.411672746222C159.6,91.06305367378843,239.4,116.79260031266287,266,126.23762376237626S372.4,177.69671704012507,399,184.86190724335592Q416.73333333333335,189.63870071217647,532,197.88952579468474L532,250Q416.73333333333335,250,399,250C372.4,250,292.6,250,266,250S159.6,250,133,250Q115.26666666666667,250,0,250Z" class="area" fill="#1ab394"></path><path d="M0,119.72381448671186Q115.26666666666667,89.97741879451104,133,90.411672746222C159.6,91.06305367378843,239.4,116.79260031266287,266,126.23762376237626S372.4,177.69671704012507,399,184.86190724335592Q416.73333333333335,189.63870071217647,532,197.88952579468474" class="line" fill="none" stroke="#17997f" stroke-width="2"></path></g><g><path d="M0,48.07191245440336Q115.26666666666667,12.028834462393654,133,8.989056800416932C159.6,4.4293903074518495,239.4,-0.7816571130796826,266,2.4752475247525183S372.4,36.99843668577386,399,41.558103178738946Q416.73333333333335,44.59788084071567,532,48.07191245440336L532,197.88952579468474Q416.73333333333335,189.63870071217647,399,184.86190724335592C372.4,177.69671704012507,292.6,135.68264721208965,266,126.23762376237626S159.6,91.06305367378843,133,90.411672746222Q115.26666666666667,89.97741879451104,0,119.72381448671186Z" class="area" fill="#eeeeee"></path><path d="M0,48.07191245440336Q115.26666666666667,12.028834462393654,133,8.989056800416932C159.6,4.4293903074518495,239.4,-0.7816571130796826,266,2.4752475247525183S372.4,36.99843668577386,399,41.558103178738946Q416.73333333333335,44.59788084071567,532,48.07191245440336" class="line" fill="none" stroke="#d7d7d7" stroke-width="2"></path></g></svg></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><font><font>一行示例</font></font></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#"><font><font>配置选项1</font></font></a>
+                                    </li>
+                                    <li><a href="#"><font><font>配置选项2</font></font></a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_line" class="rickshaw_graph"><svg width="532" height="250"><path class="path" d="M0,47.93897757122653Q115.26666666666667,1.8017107833232728,133,2.4752475247525183C159.6,3.4855526368963865,239.4,48.44413012729848,266,58.04202869266521S372.4,95.42331784198828,399,98.45423317841988Q416.73333333333335,100.47484340270762,532,88.35118205698123" fill="none" stroke="#1ab394" stroke-width="2"></path><path class="stroke"></path></svg></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><font><font>多行示例</font></font></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#"><font><font>配置选项1</font></font></a>
+                                    </li>
+                                    <li><a href="#"><font><font>配置选项2</font></font></a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_multi_line" class="rickshaw_graph"><svg width="532" height="250"><path class="path" d="M0,47.93897757122653Q115.26666666666667,1.8017107833232728,133,2.4752475247525183C159.6,3.4855526368963865,239.4,48.44413012729848,266,58.04202869266521S372.4,95.42331784198828,399,98.45423317841988Q416.73333333333335,100.47484340270762,532,88.35118205698123" fill="none" stroke="#1ab394" stroke-width="2"></path><path class="path" d="M0,148.96948878561327Q115.26666666666667,128.4266181720213,133,128.76338654273593C159.6,129.26853909880785,239.4,149.4746413416852,266,154.0210143463326S372.4,172.71165892099415,399,174.22711658920994Q416.73333333333335,175.2374217013538,532,169.1755910284906" fill="none" stroke="#d7d7d7" stroke-width="2"></path><path class="stroke"></path><path class="stroke"></path></svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><font><font>酒吧</font></font></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#"><font><font>配置选项1</font></font></a>
+                                    </li>
+                                    <li><a href="#"><font><font>配置选项2</font></font></a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_bars" class="rickshaw_graph"><svg width="532" height="250"><rect x="0" y="47.93897757122653" width="101.08" height="202.06102242877347" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect><rect x="106.4" y="2.4752475247525183" width="101.08" height="247.52475247524748" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect><rect x="212.8" y="58.04202869266521" width="101.08" height="191.9579713073348" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect><rect x="319.20000000000005" y="98.45423317841988" width="101.08" height="151.54576682158012" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect><rect x="425.6" y="88.35118205698123" width="101.08" height="161.64881794301877" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect></svg></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><font><font>堆叠的酒吧</font></font></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#"><font><font>配置选项1</font></font></a>
+                                    </li>
+                                    <li><a href="#"><font><font>配置选项2</font></font></a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_bars_stacked" class="rickshaw_graph"><svg width="532" height="250"><rect x="0" y="114.36999864369997" width="101.08" height="135.63000135630003" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect><rect x="106.4" y="83.8532483385325" width="101.08" height="166.1467516614675" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect><rect x="212.8" y="121.15149871151499" width="101.08" height="128.848501288485" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect><rect x="319.20000000000005" y="148.277498982775" width="101.08" height="101.722501017225" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect><rect x="425.6" y="141.49599891496" width="101.08" height="108.50400108504" transform="matrix(1,0,0,1,0,0)" fill="#1ab394"></rect><rect x="0" y="46.55499796555" width="101.08" height="67.81500067815001" transform="matrix(1,0,0,1,0,0)" fill="#d7d7d7"></rect><rect x="106.4" y="2.47524752475249" width="101.08" height="81.37800081378" transform="matrix(1,0,0,1,0,0)" fill="#d7d7d7"></rect><rect x="212.8" y="56.72724806727251" width="101.08" height="64.4242506442425" transform="matrix(1,0,0,1,0,0)" fill="#d7d7d7"></rect><rect x="319.20000000000005" y="97.4162484741625" width="101.08" height="50.8612505086125" transform="matrix(1,0,0,1,0,0)" fill="#d7d7d7"></rect><rect x="425.6" y="87.24399837243999" width="101.08" height="54.25200054252" transform="matrix(1,0,0,1,0,0)" fill="#d7d7d7"></rect></svg></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5><font><font>散点图</font></font></h5>
+                            <div class="ibox-tools">
+                                <a class="collapse-link">
+                                    <i class="fa fa-chevron-up"></i>
+                                </a>
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-wrench"></i>
+                                </a>
+                                <ul class="dropdown-menu dropdown-user">
+                                    <li><a href="#"><font><font>配置选项1</font></font></a>
+                                    </li>
+                                    <li><a href="#"><font><font>配置选项2</font></font></a>
+                                    </li>
+                                </ul>
+                                <a class="close-link">
+                                    <i class="fa fa-times"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div id="rickshaw_scatterplot" class="rickshaw_graph"><svg width="532" height="250"><circle cx="24.126984126984127" cy="134.79262672811058" r="4" fill="#1ab394"></circle><circle cx="72.38095238095238" cy="111.7511520737327" r="4" fill="#1ab394"></circle><circle cx="120.63492063492065" cy="173.19508448540705" r="4" fill="#1ab394"></circle><circle cx="168.88888888888889" cy="157.83410138248846" r="4" fill="#1ab394"></circle><circle cx="217.14285714285714" cy="134.79262672811058" r="4" fill="#1ab394"></circle><circle cx="265.39682539682536" cy="65.66820276497691" r="4" fill="#1ab394"></circle><circle cx="313.6507936507936" cy="34.94623655913975" r="4" fill="#1ab394"></circle><circle cx="361.90476190476187" cy="11.904761904761898" r="4" fill="#1ab394"></circle><circle cx="410.1587301587302" cy="81.02918586789554" r="4" fill="#1ab394"></circle><circle cx="458.41269841269843" cy="111.7511520737327" r="4" fill="#1ab394"></circle><circle cx="506.66666666666663" cy="127.1121351766513" r="4" fill="#1ab394"></circle></svg></div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="pull-right"><font><font>
+                10GB的</font></font><strong><font><font>250GB</font></font></strong><font><font>免费。
+            </font></font></div>
+            <div>
+                <strong><font><font>版权</font></font></strong><font><font>示例公司©2014-2017
+            </font></font></div>
+        </div>
+        </div>
+        </div>
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='js/bootstrap.js'></script>
+<script src='js/meitu.js'></script>
+<script src="js/left.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

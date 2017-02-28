@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<style>
+		#wrap{
+			width: 220px;
+
+		}
+		.first{
+			background: #fff;
+		}
+		.second{
+			background: red;
+		}
+		.third{
+			background: #aaabd4;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+			<ul class="first" id="side">
+				<li><a href="javascript:;">1级</a></li>
+				<li><a href="javascript:;">1级</a>
+					<ul class="second">
+						<li><a href="javascript:;">2级</a>
+							<ul class="third">
+								<li><a href="javascript:;">3级</a></li>
+								<li><a href="javascript:;">3级</a></li>
+								<li><a href="javascript:;">3级</a></li>
+							</ul>
+						</li>
+						<li><a href="javascript:;">2级</a></li>
+						<li><a href="javascript:;">2级</a></li>
+					</ul>
+				</li>
+				<li><a href="javascript:;">1级</a></li>
+				<li><a href="javascript:;">1级</a></li>
+			</ul>
+		<div id="content">
+			
+		</div>
+	</div>
+
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src='js/bootstrap.js'></script>
+<script src='js/side.js'></script>
+<script>
+	$(function(){
+		$('#side').sideMenu();
+	})
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
